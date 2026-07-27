@@ -7,6 +7,7 @@ Here is the ultimate master guide to every error we encountered today and exactl
 Restart your network manager to force it to reconnect, then try your update again:
 ```bash
 sudo systemctl restart NetworkManager
+```
 ```bash
 sudo apt update
 
