@@ -113,10 +113,10 @@ git push -u origin main
  * **Error:** fatal: not a git repository (or any of the parent directories): .git
  * **Why:** You are trying to run Git commands in a folder that hasn't been initialized.
  * **The Fix:** Move into the correct folder first or initialize it.
-   ```bash
+```bash
 cd name-of-your-folder
 ```
+
 ```bash
 git init
-   
-   ```
+```
