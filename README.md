@@ -70,7 +70,7 @@ git commit -m "Clean commit"
 ```
 
 ```bash
-git remote add origin <https://github.com/WHOIAM27/name.git>
+git remote add origin https://github.com/WHOIAM27/name.git
 ```
 
 ```bash
