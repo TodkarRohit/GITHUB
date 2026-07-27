@@ -49,34 +49,34 @@ git push -u origin main
  1. Open the .cpp file in a text editor and physically delete the password text. Save the file.
  2. Delete the corrupted local Git history:
    ```bash
-   rm -rf .git   
+rm -rf .git   
    ```
 
  3. Re-initialize and push fresh:
-   ```bash
-   git init
+```bash
+git init
 ```
 
 ```bash
-   git branch -M main
+git branch -M main
 ```
 
 ```bash
-   git add .
+git add .
 ```
 
 ```bash
-   git commit -m "Clean commit"
+git commit -m "Clean commit"
 ```
 
 ```bash
-   git remote add origin <https://github.com/WHOIAM27/name.git>
+git remote add origin <https://github.com/WHOIAM27/name.git>
 ```
 
 ```bash
-   git push -u origin main --force
-   
-   ```
+git push -u origin main --force
+```
+
 ### 5. The "Fetch First" / Unrelated Histories Error
 **The Error:** [rejected] main -> main (fetch first) OR fatal: refusing to merge unrelated histories
 **Why it happens:** You created files locally on your computer AND you created files online on GitHub (like a README) at the same time. Git refuses to overwrite the online files because it doesn't know how they connect to your local files.
