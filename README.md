@@ -13,7 +13,7 @@ sudo apt update
 ```
 
 ### 2. The Authentication / Password Error
-**The Error:** remote: Invalid username or token. Password authentication is not supported for Git operations.
+**The Error:** **remote: Invalid username or token. Password authentication is not supported for Git operations.**
 **Why it happens:** You typed in your normal GitHub account password, or you pasted a Personal Access Token (PAT) that had a typo or was expired.
 **The Fix:**
 GitHub requires a token for terminal uploads.
@@ -22,7 +22,7 @@ GitHub requires a token for terminal uploads.
  3. Run git push origin main again, and paste that token when asked for the password.
    *(Bonus permanent fix: Run git config --global credential.helper store so Git saves the token and stops asking you for it).*
 ### 3. The Empty Branch Error
-**The Error:** error: src refspec main does not match any
+**The Error: **error: src refspec main does not match any**
 **Why it happens:** You tried to push code, but your folder was completely empty. Git cannot create a branch or a save point without at least one file.
 **The Fix:**
 Create a simple dummy file, save it, and then push:
@@ -43,7 +43,7 @@ git push -u origin main
 ```
 
 ### 4. The Blocked Push (Secret Leak) Error
-**The Error:** Push declined due to repository rule violations / Push cannot contain secrets
+**The Error: **Push declined due to repository rule violations / Push cannot contain secrets**
 **Why it happens:** You accidentally pasted your GitHub Personal Access Token (or another password) inside your actual .cpp code files. GitHub's security scanner caught it and blocked the upload to protect your account.
 **The Fix (Clean Slate Method):**
  1. Open the .cpp file in a text editor and physically delete the password text. Save the file.
@@ -78,7 +78,7 @@ git push -u origin main --force
 ```
 
 ### 5. The "Fetch First" / Unrelated Histories Error
-**The Error:** [rejected] main -> main (fetch first) OR fatal: refusing to merge unrelated histories
+**The Error: **[rejected] main -> main (fetch first) OR fatal: refusing to merge unrelated histories**
 **Why it happens:** You created files locally on your computer AND you created files online on GitHub (like a README) at the same time. Git refuses to overwrite the online files because it doesn't know how they connect to your local files.
 **The Fix:**
 Force Git to download the online files and merge them with your local code:
@@ -96,7 +96,7 @@ git push -u origin main
 ```
 *(To prevent this permanently: Always create a completely empty repository on GitHub without checking any README/License boxes if you already have local code).*
 ### 6. The "Not a Git Repository" Error
-**The Error:** fatal: not a git repository (or any of the parent directories): .git
+**The Error: **fatal: not a git repository (or any of the parent directories): .git**
 **Why it happens:** You are trying to run commands like git add . in a normal computer folder that hasn't been turned into a Git project, or you are sitting outside of your cloned project folder.
 **The Fix:**
 Move into the correct folder first using the cd command, or initialize the folder:
