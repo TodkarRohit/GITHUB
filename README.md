@@ -11,15 +11,15 @@ git init | 📁 | Starts a brand new, empty repository in your folder. |
 |
  git status | 🔍 | Checks which files you have changed or added. |
 |
-git add . ```| ➕ | Prepares all your changed files to be saved (staging). |
+git add . | ➕ | Prepares all your changed files to be saved (staging). |
 |
- git commit -m "..." ```| 💾 | Saves a local snapshot of your changes with a message. |
+ git commit -m "..." | 💾 | Saves a local snapshot of your changes with a message. |
 |
- git push -u origin main ``` | ⬆️ | Uploads your saved changes to GitHub for the first time. |
+ git push -u origin main  | ⬆️ | Uploads your saved changes to GitHub for the first time. |
 |
- git push ``` | ☁️ | Uploads your saved changes to GitHub (after the first time). |
+ git push | ☁️ | Uploads your saved changes to GitHub (after the first time). |
 |
- ```bash git pull origin main | 🔄 | Downloads any new updates from GitHub to your computer. |
+  git pull origin main | 🔄 | Downloads any new updates from GitHub to your computer. |
 |
  cd <folder> | 📂 | Moves your terminal into a specific folder. |
 
