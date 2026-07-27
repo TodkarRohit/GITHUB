@@ -4,8 +4,7 @@ Here is your complete, combined guide for essential commands and error troublesh
 
 | Command | Action | Description |
 | :--- | :--- | :--- |
-| 
-git init | 📁 | Starts a brand new, empty repository in your folder. |
+| git init | 📁 | Starts a brand new, empty repository in your folder. |
 | git clone https://github.com/WHOIAM27/name.git | ⬇️ | Downloads an existing project from GitHub to your computer. |
 | git status | 🔍 | Checks which files you have changed or added. |
 | git add . | ➕ | Prepares all your changed files to be saved (staging). |
