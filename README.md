@@ -28,6 +28,7 @@ GitHub requires a token for terminal uploads.
 Create a simple dummy file, save it, and then push:
 ```bash
 touch README.md
+```
 
 ```bash
 git add .
