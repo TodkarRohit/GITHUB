@@ -10,8 +10,8 @@ sudo systemctl restart NetworkManager
 ```
 ```bash
 sudo apt update
-
 ```
+
 ### 2. The Authentication / Password Error
 **The Error:** remote: Invalid username or token. Password authentication is not supported for Git operations.
 **Why it happens:** You typed in your normal GitHub account password, or you pasted a Personal Access Token (PAT) that had a typo or was expired.
@@ -28,14 +28,19 @@ GitHub requires a token for terminal uploads.
 Create a simple dummy file, save it, and then push:
 ```bash
 touch README.md
+
 ```bash
 git add .
+```
+
 ```bash
 git commit -m "Initial commit"
+```
+
 ```bash
 git push -u origin main
-
 ```
+
 ### 4. The Blocked Push (Secret Leak) Error
 **The Error:** Push declined due to repository rule violations / Push cannot contain secrets
 **Why it happens:** You accidentally pasted your GitHub Personal Access Token (or another password) inside your actual .cpp code files. GitHub's security scanner caught it and blocked the upload to protect your account.
@@ -43,20 +48,30 @@ git push -u origin main
  1. Open the .cpp file in a text editor and physically delete the password text. Save the file.
  2. Delete the corrupted local Git history:
    ```bash
-   rm -rf .git
-   
+   rm -rf .git   
    ```
+
  3. Re-initialize and push fresh:
    ```bash
    git init
+```
+
 ```bash
    git branch -M main
+```
+
 ```bash
    git add .
+```
+
 ```bash
    git commit -m "Clean commit"
+```
+
 ```bash
    git remote add origin <https://github.com/WHOIAM27/name.git>
+```
+
 ```bash
    git push -u origin main --force
    
@@ -68,8 +83,12 @@ git push -u origin main
 Force Git to download the online files and merge them with your local code:
 ```bash
 git config pull.rebase false
+```
+
 ```bash
 git pull origin main --allow-unrelated-histories
+```
+
 ```bash
 git push -u origin main
 
