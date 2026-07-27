@@ -7,6 +7,7 @@ Here is the ultimate master guide to every error we encountered today and exactl
 Restart your network manager to force it to reconnect, then try your update again:
 ```bash
 sudo systemctl restart NetworkManager
+```bash
 sudo apt update
 
 ```
@@ -26,8 +27,11 @@ GitHub requires a token for terminal uploads.
 Create a simple dummy file, save it, and then push:
 ```bash
 touch README.md
+```bash
 git add .
+```bash
 git commit -m "Initial commit"
+```bash
 git push -u origin main
 
 ```
@@ -44,10 +48,15 @@ git push -u origin main
  3. Re-initialize and push fresh:
    ```bash
    git init
+```bash
    git branch -M main
+```bash
    git add .
+```bash
    git commit -m "Clean commit"
-   git remote add origin <your-github-URL>
+```bash
+   git remote add origin <https://github.com/WHOIAM27/name.git>
+```bash
    git push -u origin main --force
    
    ```
@@ -58,7 +67,9 @@ git push -u origin main
 Force Git to download the online files and merge them with your local code:
 ```bash
 git config pull.rebase false
+```bash
 git pull origin main --allow-unrelated-histories
+```bash
 git push -u origin main
 
 ```
