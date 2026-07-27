@@ -6,22 +6,14 @@ Here is your complete, combined guide for essential commands and error troublesh
 | :--- | :--- | :--- |
 | 
 git init | 📁 | Starts a brand new, empty repository in your folder. |
-|
- git clone https://github.com/WHOIAM27/name.git | ⬇️ | Downloads an existing project from GitHub to your computer. |
-|
- git status | 🔍 | Checks which files you have changed or added. |
-|
-git add . | ➕ | Prepares all your changed files to be saved (staging). |
-|
- git commit -m "..." | 💾 | Saves a local snapshot of your changes with a message. |
-|
- git push -u origin main  | ⬆️ | Uploads your saved changes to GitHub for the first time. |
-|
- git push | ☁️ | Uploads your saved changes to GitHub (after the first time). |
-|
-  git pull origin main | 🔄 | Downloads any new updates from GitHub to your computer. |
-|
- cd <folder> | 📂 | Moves your terminal into a specific folder. |
+| git clone https://github.com/WHOIAM27/name.git | ⬇️ | Downloads an existing project from GitHub to your computer. |
+| git status | 🔍 | Checks which files you have changed or added. |
+| git add . | ➕ | Prepares all your changed files to be saved (staging). |
+| git commit -m "..." | 💾 | Saves a local snapshot of your changes with a message. |
+| git push -u origin main  | ⬆️ | Uploads your saved changes to GitHub for the first time. |
+| git push | ☁️ | Uploads your saved changes to GitHub (after the first time). |
+|  git pull origin main | 🔄 | Downloads any new updates from GitHub to your computer. |
+| cd <folder> | 📂 | Moves your terminal into a specific folder. |
 
 ### 🚨 2. GitHub Error Troubleshooting Guide
 **🌐 1. The Internet Connection Error**
