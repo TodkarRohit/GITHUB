@@ -101,7 +101,7 @@ git push -u origin main
 **The Fix:**
 Move into the correct folder first using the cd command, or initialize the folder:
 ```bash
-cd <name-of-your-folder>
+cd name-of-your-folder
 
 ```
 *(If it's a brand new folder, run git init inside it first).*
