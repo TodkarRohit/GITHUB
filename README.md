@@ -120,3 +120,24 @@ cd name-of-your-folder
 ```bash
 git init
 ```
+
+
+### 7. The "Non-Fast-Forward" Error
+**The Error:** ! [rejected] main -> main (non-fast-forward)
+**Why it happens:** Your local repository on your computer is behind the online repository on GitHub (usually because changes were made directly on the GitHub website, or pushed from a different computer). Git blocks your push to prevent you from accidentally deleting those newer online changes.
+**The Fix:**
+Download the latest changes from GitHub to your computer first, let Git combine them, and then push again:
+```bash
+git pull origin main
+
+```
+```bash
+git push origin main
+
+```
+*(If you DO NOT care about the online files and want to completely overwrite the GitHub repository with your current local code, use the force push command instead):*
+```bash
+git push -u origin main --force
+
+```
+
