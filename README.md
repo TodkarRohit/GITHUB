@@ -158,4 +158,30 @@ git push -u origin main --force
 
 ```
 
+### 9. The "Diverged Branches & Unsaved Changes" Error
+**The Error:** Your branch and 'origin/main' have diverged AND error: Your local changes to the following files would be overwritten by merge
+**Why it happens:** GitHub has new updates that your computer doesn't have, and your computer has new saved commits that GitHub doesn't have. Git wants to sync them up using git pull, but it refuses to do so because you have *unsaved* edits in some of your files. Git freezes to protect your unsaved work from being deleted.
+**The Fix:**
+Use the stash command to temporarily hide your unsaved edits in a "magic drawer", sync the branches, push your code, and then bring your unsaved edits back.
+ 1. Hide your unsaved changes so Git stops complaining:
+```bash
+git stash
+
+```
+ 2. Download the missing files from GitHub and sync everything:
+```bash
+git pull origin main
+
+```
+ 3. Upload your saved code to GitHub:
+```bash
+git push origin main
+
+```
+ 4. *(Optional)* Bring your unsaved edits back out of the "magic drawer" so you can keep working on them:
+```bash
+git stash pop
+
+```
+
 
