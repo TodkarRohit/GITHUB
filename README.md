@@ -141,3 +141,21 @@ git push -u origin main --force
 
 ```
 
+
+### 8. The Merge Conflict Error
+**The Error:** Automatic merge failed; fix conflicts and then commit the result. (or CONFLICT (add/add))
+**Why it happens:** Git noticed that the code you have on your computer is different from the code currently sitting on GitHub for the exact same files. It doesn't know which version to keep, so it hits the "pause" button and locks your terminal from pushing until you make a decision.
+**The Fix:**
+If your goal is to completely overwrite the GitHub files with your local, clean files, you can cancel the stuck merge and force the push:
+ 1. Cancel the confusing merge process and unfreeze the terminal:
+```bash
+git merge --abort
+
+```
+ 2. Force your computer's files to overwrite the GitHub repository:
+```bash
+git push -u origin main --force
+
+```
+
+
