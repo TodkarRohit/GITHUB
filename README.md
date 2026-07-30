@@ -2,6 +2,7 @@
 Here is your complete, combined guide for essential commands and error troubleshooting.
 ### 💻 1. Essential Git Commands
 
+
 | Command | Action | Description |
 | :--- | :--- | :--- |
 | git init | 📁 | Starts a brand new, empty repository in your folder. |
