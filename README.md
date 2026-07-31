@@ -16,26 +16,11 @@ Here is your complete, combined guide for essential commands and error troublesh
 | cd <folder> | 📂 | Moves your terminal into a specific folder. |
 
 ### 🚨 2. GitHub Error Troubleshooting Guide
-**🌐 1. The Internet Connection Error**
- * **Error:** Temporary failure resolving 'in.archive.ubuntu.com'
- * **Why:** Your terminal lost internet connection or DNS is stuck.
- * **The Fix:** Restart your network manager.
+**🌐 1. 
+   
+**🔑 2. 
 
-```bash
-sudo systemctl restart NetworkManager
-```
-```bash
-sudo apt update
-```
-   
-**🔑 2. The Authentication / Password Error**
- * **Error:** remote: Invalid username or token. Password authentication is not supported...
- * **Why:** You used your account password instead of a Personal Access Token (PAT).
- * **The Fix:** Generate a PAT in GitHub Settings. To make Git remember it forever:
-   ```bash
-   git config --global credential.helper store
-   
-   ```
+
 **📭 3. The Empty Branch Error**
  * **Error:** error: src refspec main does not match any
  * **Why:** Your folder is empty. Git cannot create a save point without files.
@@ -46,13 +31,7 @@ touch README.md
 
 ```bash
 git add .
-```
-
-```bash
 git commit -m "Initial commit"
-```
-
-```bash
 git push -u origin main
 ```
 
@@ -72,25 +51,12 @@ rm -rf .git
  3. Re-initialize and push fresh:
 ```bash
 git init
-```
-
-```bash
 git branch -M main
-```
-
-```bash
 git add .
-```
-
-```bash
 git commit -m "Clean commit"
-```
 
-```bash
 git remote add origin https://github.com/WHOIAM27/name.git
-```
 
-```bash
 git push -u origin main --force
 ```
 
@@ -100,13 +66,7 @@ git push -u origin main --force
  * **The Fix:** Force Git to download and merge the online files.
 ```bash
 git config pull.rebase false
-```
-
-```bash
 git pull origin main --allow-unrelated-histories
-```
-
-```bash
 git push -u origin main
 
 ```
