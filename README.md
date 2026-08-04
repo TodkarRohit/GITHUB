@@ -20,7 +20,7 @@ Here is your complete, combined guide for essential commands and error troublesh
 
 ### 🚨 2. GitHub Error Troubleshooting Guide
 
-### **🌐 1. Here is the complete sequence of steps to install, configure, authenticate, and eventually log out of the GitHub CLI (gh).**
+### ** 🌐 1. Here is the complete sequence of steps to install, configure, authenticate, and eventually log out of the GitHub CLI (gh).**
 ## 1. Installation
 Run these commands to add the official repository and install the tool:
 
@@ -113,7 +113,7 @@ git push -u origin main --force
 -------------------------------------------------------
 
 
-### **⚠️ 5. The "Fetch First" / Unrelated Histories Error**
+### ⚠️ 5. The "Fetch First" / Unrelated Histories Error
  * # **Error:** [rejected] main -> main (fetch first) OR fatal: refusing to merge unrelated histories
  * **Why:** Files were created on GitHub (like a README) and locally at the same time.
  * **The Fix:** Force Git to download and merge the online files.
@@ -128,7 +128,7 @@ git push -u origin main
 -------------------------------------------------------
 
 
-### **❌ 6. The "Not a Git Repository" Error**
+### ❌ 6. The "Not a Git Repository" Error
  * # **Error:** fatal: not a git repository (or any of the parent directories): .git
  * **Why:** You are trying to run Git commands in a folder that hasn't been initialized.
  * **The Fix:** Move into the correct folder first or initialize it.
