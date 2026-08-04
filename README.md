@@ -15,6 +15,9 @@ Here is your complete, combined guide for essential commands and error troublesh
 |  git pull origin main | 🔄 | Downloads any new updates from GitHub to your computer. |
 | cd <folder> | 📂 | Moves your terminal into a specific folder. |
 
+-------------------------------------------------------
+-------------------------------------------------------
+
 ### 🚨 2. GitHub Error Troubleshooting Guide
 
 **🌐 1. Here is the complete sequence of steps to install, configure, authenticate, and eventually log out of the GitHub CLI (gh).**
