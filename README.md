@@ -56,13 +56,14 @@ When you are done and want to remove your credentials from the machine, clear th
 ```bash
 gh auth logout
 ```
+-------------------------------------------------------
 
    
 **🔑 2. 
 
 
 **📭 3. The Empty Branch Error**
- * **Error:** error: src refspec main does not match any:
+ * **Error:** error: src refspec main does not match any.
  * **Why:** Your folder is empty. Git cannot create a save point without files.
  * **The Fix:** Create a dummy file and commit it.
 ```bash
