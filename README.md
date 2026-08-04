@@ -16,7 +16,8 @@ Here is your complete, combined guide for essential commands and error troublesh
 | cd <folder> | 📂 | Moves your terminal into a specific folder. |
 
 ### 🚨 2. GitHub Error Troubleshooting Guide
-**🌐 1. Here is the complete sequence of steps to install, configure, authenticate, and eventually log out of the GitHub CLI (gh).
+
+**🌐 1. Here is the complete sequence of steps to install, configure, authenticate, and eventually log out of the GitHub CLI (gh).**
 ## 1. Installation
 Run these commands to add the official repository and install the tool:
 
@@ -61,7 +62,7 @@ gh auth logout
 
 
 **📭 3. The Empty Branch Error**
- * **Error:** error: src refspec main does not match any
+ * **Error:** error: src refspec main does not match any:
  * **Why:** Your folder is empty. Git cannot create a save point without files.
  * **The Fix:** Create a dummy file and commit it.
 ```bash
