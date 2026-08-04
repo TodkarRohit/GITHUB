@@ -20,7 +20,7 @@ Here is your complete, combined guide for essential commands and error troublesh
 
 ### 🚨 2. GitHub Error Troubleshooting Guide
 
-**🌐 1. Here is the complete sequence of steps to install, configure, authenticate, and eventually log out of the GitHub CLI (gh).**
+###**🌐 1. Here is the complete sequence of steps to install, configure, authenticate, and eventually log out of the GitHub CLI (gh).**
 ## 1. Installation
 Run these commands to add the official repository and install the tool:
 
@@ -68,8 +68,8 @@ gh auth logout
 **🔑 2. 
 
 
-**📭 3. The Empty Branch Error**
- * **Error:** error: src refspec main does not match any.
+##**📭 3. The Empty Branch Error**
+ * #**Error:** error: src refspec main does not match any.
  * **Why:** Your folder is empty. Git cannot create a save point without files.
  * **The Fix:** Create a dummy file and commit it.
 ```bash
@@ -85,8 +85,8 @@ git push -u origin main
 -------------------------------------------------------
 -------------------------------------------------------
 
-**🛑 4. The Blocked Push (Secret Leak) Error**
- * **Error:** Push declined due to repository rule violations / Push cannot contain secrets
+###**🛑 4. The Blocked Push (Secret Leak) Error**
+ * #**Error:** Push declined due to repository rule violations / Push cannot contain secrets
  * **Why:** You accidentally pasted a password/token inside your actual code.
  * **The Fix:** Delete the password text from your code, then wipe the corrupted history.
 **The Fix (Clean Slate Method):**
@@ -113,8 +113,8 @@ git push -u origin main --force
 -------------------------------------------------------
 
 
-**⚠️ 5. The "Fetch First" / Unrelated Histories Error**
- * **Error:** [rejected] main -> main (fetch first) OR fatal: refusing to merge unrelated histories
+###**⚠️ 5. The "Fetch First" / Unrelated Histories Error**
+ * #**Error:** [rejected] main -> main (fetch first) OR fatal: refusing to merge unrelated histories
  * **Why:** Files were created on GitHub (like a README) and locally at the same time.
  * **The Fix:** Force Git to download and merge the online files.
 ```bash
@@ -128,8 +128,8 @@ git push -u origin main
 -------------------------------------------------------
 
 
-**❌ 6. The "Not a Git Repository" Error**
- * **Error:** fatal: not a git repository (or any of the parent directories): .git
+###**❌ 6. The "Not a Git Repository" Error**
+ * #**Error:** fatal: not a git repository (or any of the parent directories): .git
  * **Why:** You are trying to run Git commands in a folder that hasn't been initialized.
  * **The Fix:** Move into the correct folder first or initialize it.
 ```bash
@@ -145,7 +145,7 @@ git init
 
 
 ### 7. The "Non-Fast-Forward" Error
-**The Error:** ! [rejected] main -> main (non-fast-forward)
+#**The Error:** ! [rejected] main -> main (non-fast-forward)
 **Why it happens:** Your local repository on your computer is behind the online repository on GitHub (usually because changes were made directly on the GitHub website, or pushed from a different computer). Git blocks your push to prevent you from accidentally deleting those newer online changes.
 **The Fix:**
 Download the latest changes from GitHub to your computer first, let Git combine them, and then push again:
@@ -167,7 +167,7 @@ git push -u origin main --force
 
 
 ### 8. The Merge Conflict Error
-**The Error:** Automatic merge failed; fix conflicts and then commit the result. (or CONFLICT (add/add))
+#**The Error:** Automatic merge failed; fix conflicts and then commit the result. (or CONFLICT (add/add))
 **Why it happens:** Git noticed that the code you have on your computer is different from the code currently sitting on GitHub for the exact same files. It doesn't know which version to keep, so it hits the "pause" button and locks your terminal from pushing until you make a decision.
 **The Fix:**
 If your goal is to completely overwrite the GitHub files with your local, clean files, you can cancel the stuck merge and force the push:
@@ -187,7 +187,7 @@ git push -u origin main --force
 
 
 ### 9. The "Diverged Branches & Unsaved Changes" Error
-**The Error:** Your branch and 'origin/main' have diverged AND error: Your local changes to the following files would be overwritten by merge
+#**The Error:** Your branch and 'origin/main' have diverged AND error: Your local changes to the following files would be overwritten by merge
 **Why it happens:** GitHub has new updates that your computer doesn't have, and your computer has new saved commits that GitHub doesn't have. Git wants to sync them up using git pull, but it refuses to do so because you have *unsaved* edits in some of your files. Git freezes to protect your unsaved work from being deleted.
 **The Fix:**
 Use the stash command to temporarily hide your unsaved edits in a "magic drawer", sync the branches, push your code, and then bring your unsaved edits back.
