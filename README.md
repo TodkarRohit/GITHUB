@@ -58,7 +58,7 @@ gh auth logout
 ```
 -------------------------------------------------------
 -------------------------------------------------------
--------------------------------------------------------
+
 
 
    
@@ -79,6 +79,8 @@ git commit -m "Initial commit"
 git push -u origin main
 ```
 
+-------------------------------------------------------
+-------------------------------------------------------
 
 **🛑 4. The Blocked Push (Secret Leak) Error**
  * **Error:** Push declined due to repository rule violations / Push cannot contain secrets
@@ -104,6 +106,10 @@ git remote add origin https://github.com/WHOIAM27/name.git
 git push -u origin main --force
 ```
 
+-------------------------------------------------------
+-------------------------------------------------------
+
+
 **⚠️ 5. The "Fetch First" / Unrelated Histories Error**
  * **Error:** [rejected] main -> main (fetch first) OR fatal: refusing to merge unrelated histories
  * **Why:** Files were created on GitHub (like a README) and locally at the same time.
@@ -114,6 +120,11 @@ git pull origin main --allow-unrelated-histories
 git push -u origin main
 
 ```
+
+-------------------------------------------------------
+-------------------------------------------------------
+
+
 **❌ 6. The "Not a Git Repository" Error**
  * **Error:** fatal: not a git repository (or any of the parent directories): .git
  * **Why:** You are trying to run Git commands in a folder that hasn't been initialized.
@@ -125,6 +136,9 @@ cd name-of-your-folder
 ```bash
 git init
 ```
+
+-------------------------------------------------------
+-------------------------------------------------------
 
 
 ### 7. The "Non-Fast-Forward" Error
@@ -145,6 +159,8 @@ git push origin main
 git push -u origin main --force
 
 ```
+-------------------------------------------------------
+-------------------------------------------------------
 
 
 ### 8. The Merge Conflict Error
@@ -162,6 +178,10 @@ git merge --abort
 git push -u origin main --force
 
 ```
+
+-------------------------------------------------------
+-------------------------------------------------------
+
 
 ### 9. The "Diverged Branches & Unsaved Changes" Error
 **The Error:** Your branch and 'origin/main' have diverged AND error: Your local changes to the following files would be overwritten by merge
