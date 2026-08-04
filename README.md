@@ -16,7 +16,46 @@ Here is your complete, combined guide for essential commands and error troublesh
 | cd <folder> | 📂 | Moves your terminal into a specific folder. |
 
 ### 🚨 2. GitHub Error Troubleshooting Guide
-**🌐 1. 
+**🌐 1. Here is the complete sequence of steps to install, configure, authenticate, and eventually log out of the GitHub CLI (gh).
+## 1. Installation
+Run these commands to add the official repository and install the tool:
+
+# Update your package list and install
+```bash
+sudo apt update
+sudo apt install gh
+```
+## 2. Authentication (Login)
+Connect your terminal to your GitHub account: [1] 
+```bash
+gh auth login
+```
+Interactive Prompts to Select:
+
+* What account do you want to log into? GitHub.com
+* What is your preferred protocol for Git operations? HTTPS or SSH
+* Authenticate Git with your GitHub credentials? Yes
+* How would you like to authenticate GitHub CLI? Login with a web browser
+* Final step: Copy the 8-digit code shown in your terminal, press Enter, and paste it into the browser window that opens. [2] 
+
+## 3. Verification
+Confirm that your account is successfully linked:
+```bash
+gh auth status
+```
+## 4. Basic Usage Examples
+Now you can manage repositories directly from the command line:
+
+* Clone a repo: gh repo clone username/repo-name
+* Create a new repo: gh repo create my-project --public
+* View open issues: gh issue list [3, 4, 5] 
+
+## 5. Deauthentication (Logout)
+When you are done and want to remove your credentials from the machine, clear the session:
+```bash
+gh auth logout
+```
+
    
 **🔑 2. 
 
