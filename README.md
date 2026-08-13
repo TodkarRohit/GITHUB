@@ -226,5 +226,8 @@ git commit -m  "main"
 git checkout -b main
 git push -u origin main
 ```
+```bash
+git switch main
 
+```
 
