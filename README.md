@@ -16,6 +16,11 @@ Here is your complete, combined guide for essential commands and error troublesh
 | cd <folder> | 📂 | Moves your terminal into a specific folder. |
 
 -------------------------------------------------------
+```bash
+git add .
+git commit -m "commit"
+git push -u origin main
+```
 -------------------------------------------------------
 
 ### 🚨 2. GitHub Error Troubleshooting Guide
