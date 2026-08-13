@@ -217,4 +217,14 @@ git stash pop
 
 ```
 
+-------------------------------------------------------
+-------------------------------------------------------
+
+```bash
+git add .
+git commit -m  "branch"
+git checkout -b branch
+git push -u origin branch
+```
+
 
