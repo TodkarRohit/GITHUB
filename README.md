@@ -222,9 +222,9 @@ git stash pop
 
 ```bash
 git add .
-git commit -m  "main"
-git checkout -b main
-git push -u origin main
+git commit -m  "main2"
+git checkout -b main2
+git push -u origin main2
 ```
 ```bash
 git switch main
